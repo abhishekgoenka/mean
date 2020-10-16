@@ -2,25 +2,26 @@ const express = require('express');
 const router = express.Router();
 
 // const heroService = require('./hero.service');
+const videoService = require('./services/video.service');
 
-router.get('/heros', (req, res) => {
-    res.send('API works');
+router.get('/video', (req, res) => {
+    videoService.getVideos(req, res);
 });
 
-// router.get('/heroes', (req, res) => {
-//   heroService.getHeroes(req, res);
-// });
+router.get('/video/:id', (req, res) => {
+    videoService.getVideosById(req, res);
+});
 
-// router.post('/hero', (req, res) => {
-//   heroService.postHero(req, res);
-// });
+router.post('/video', (req, res) => {
+    videoService.postVideo(req, res);
+});
 
-// router.put('/hero/:id', (req, res) => {
-//   heroService.putHero(req, res);
-// });
+router.put('/video/:id', (req, res) => {
+    videoService.putVideo(req, res);
+});
 
-// router.delete('/hero/:id', (req, res) => {
-//   heroService.deleteHero(req, res);
-// });
+router.delete('/video/:id', (req, res) => {
+    videoService.deleteVideo(req, res);
+});
 
 module.exports = router;
