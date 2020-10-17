@@ -6,14 +6,14 @@
 # Set MyRunNumber
 variables: 
   uiSource: "."
-  uiBuild: "$(uiSource)/dist/publicweb"
+  uiBuild: "$(uiSource)/dist"
   BuildNumber: '1.0.0-CI-$(Build.BuildNumber)'
   tag: '$(Build.BuildNumber)'
 
 name: 1.0$(Rev:.r)
 
 trigger:
-- master
+- main
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -37,6 +37,18 @@ steps:
     archiveType: 'zip'
     archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
     replaceExistingArchive: true
+
+- task: Bash@3
+  displayName: Deploy to heroku
+  inputs:
+    targetType: 'inline'
+    script: |
+      # Write your commands here
+      git checkout $(Build.SourceBranchName)
+      git remote add heroku https://heroku:$PAT@git.heroku.com/test_app.git
+      git push heroku $(Build.SourceBranchName)
+      echo 'Hello world'
+    workingDirectory: '.'
     
 # - task: PublishBuildArtifacts@1
 #   displayName: Publish Artifacts

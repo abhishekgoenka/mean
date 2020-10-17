@@ -1,6 +1,8 @@
 # mean
 A MEAN stack application
 
+[![Build Status](https://dev.azure.com/abhishekgoenkapublic/mean/_apis/build/status/main-ci?branchName=main)](https://dev.azure.com/abhishekgoenkapublic/mean/_build/latest?definitionId=2&branchName=main)
+
 # Angular MEAN stack application
 
 You can [watch me build the app as part of my series here](https://johnpapa.net/angular-cosmosdb-1/)
