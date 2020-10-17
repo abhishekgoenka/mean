@@ -4,7 +4,7 @@ const router = express.Router();
 // const heroService = require('./hero.service');
 const videoService = require('./services/video.service');
 
-router.get('/video', (req, res) => {
+router.get('/videos', (req, res) => {
     videoService.getVideos(req, res);
 });
 

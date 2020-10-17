@@ -63,19 +63,24 @@ docker run -d -p 3000:80 $dockerImage
 
 ## Running the app
 
-1. Build the Angular app
+1. Run app in development environment. This will start angular client and node server.
+    ```bash
+    npm start
+    ```
+
+2. Build the Angular app
 
     ```bash
     ng build
     ```
 
-1. Launch the server
+3. Launch the server
 
     ```bash
     npm start
     ```
 
-1. Open the browser to http://localhost:3000
+1. Open the browser to http://localhost:4200
 
 ## Problems or Suggestions
 
