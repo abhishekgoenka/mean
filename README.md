@@ -1,7 +1,7 @@
 # mean
 A MEAN stack application
 
-[![Build Status](https://dev.azure.com/abhishekgoenkapublic/react-hello-world/_apis/build/status/mean-main-ci?branchName=main)](https://dev.azure.com/abhishekgoenkapublic/react-hello-world/_build/latest?definitionId=3&branchName=main)
+[![Build Status](https://dev.azure.com/abhishekgoenkapublic/github-projects/_apis/build/status/mean-main-ci?branchName=main)](https://dev.azure.com/abhishekgoenkapublic/github-projects/_build/latest?definitionId=3&branchName=main)
 
 # Angular MEAN stack application
 
@@ -83,6 +83,24 @@ docker run -d -p 3000:80 $dockerImage
     ```
 
 1. Open the browser to http://localhost:4200
+
+## Dockerize the App 
+
+
+### To start the containers
+> docker-compose up
+
+### To stop the containers
+> docker-compose down
+
+### Install docker compose if not already installed
+> sudo apt install docker-compose
+
+### Pull and Run image from registry
+> docker run -p 80:80 abhishek1950/mean
+
+### URL to use
+http://localhost/
 
 ## Problems or Suggestions
 
