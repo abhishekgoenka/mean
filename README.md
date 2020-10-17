@@ -1,7 +1,7 @@
 # mean
 A MEAN stack application
 
-[![Build Status](https://dev.azure.com/abhishekgoenkapublic/mean/_apis/build/status/main-ci?branchName=main)](https://dev.azure.com/abhishekgoenkapublic/mean/_build/latest?definitionId=2&branchName=main)
+[![Build Status](https://dev.azure.com/abhishekgoenkapublic/react-hello-world/_apis/build/status/mean-main-ci?branchName=main)](https://dev.azure.com/abhishekgoenkapublic/react-hello-world/_build/latest?definitionId=3&branchName=main)
 
 # Angular MEAN stack application
 
