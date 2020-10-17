@@ -6,7 +6,7 @@ WORKDIR /app
 COPY package.json /app
 RUN npm install
 COPY . /app
-RUN ng build --prod
+RUN npm run build
 
 #Express server =======================================
 FROM node:12.2.0-alpine as express-server

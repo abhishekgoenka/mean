@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const routes = require('./routes');
 
-const publicweb = './dist/publicweb';
+const publicweb = './publicweb';
 const app = express();
 
 app.use(bodyParser.json());
