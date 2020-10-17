@@ -11,16 +11,6 @@ You can [view all videos together here](/VIDEOS.md)
 
 [Learn more about developing Node.js apps with Azure's cloud services here](https://www.youtube.com/watch?v=HznzUUMyV1Q&list=PLC3y8-rFHvwj200LLotCYum_9wmGeTJx9)
 
-## Docker
-
-Create the Docker image and run it locally
-
-```bash
-dockerImage=angular-cosmosdb
-docker build -t $dockerImage .
-docker run -d -p 3000:80 $dockerImage
-```
-
 ## Requirements
 
 1. Install the Angular CLI
