@@ -8,6 +8,7 @@
     "start:server": "nodemon --watch src/server src/server/index.js",
     "start:client": "ng serve",
     "build": "ng build",
+    "postbuild":"cp -R dist/publicweb/ publicweb",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
