@@ -41,6 +41,7 @@ function postVideo(req, res) {
 }
 
 function putVideo(req, res) {
+    const originalVideo = { title: req.body.title, url: req.body.url, description: req.body.description };
     Video.findById(req.params.id, (error, video) => {
         if (checkServerError(res, error)) return;
         if (!checkFound(res, video)) return;

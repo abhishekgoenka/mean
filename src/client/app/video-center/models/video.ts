@@ -5,20 +5,20 @@ export class Video {
     /**
      * string identifier
      */
-    _id: string;
+    _id?: string;
     
     /**
      * video title
      */
-    title: string;
+    title?: string;
 
     /**
      * video url
      */
-    url: string;
+    url?: string;
 
     /**
      * video description
      */
-    description: string;
+    description?: string;
 }

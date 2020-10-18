@@ -15,4 +15,16 @@ export class VideoService {
   getVideos(): Observable<Video[]> {
     return this.http.get<Video[]>(`${api}/videos`);
   }
+
+  addVideo(video: Video): Observable<Video> {
+    return this.http.post<Video>(`${api}/video`, video);
+  }
+
+  updateVideo(id: string, video: Video): Observable<Video> {
+    return this.http.put<Video>(`${api}/video/${id}`, video);
+  }
+
+  deleteVideo(id: string): Observable<Video> {
+    return this.http.delete<Video>(`${api}/video/${id}`);
+  }
 }

@@ -6,6 +6,7 @@ import { VideoDetailComponent } from './video-detail/video-detail.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { SafePipe } from './pipes/safe.pipe';
+import { VideoAddComponent } from './video-add/video-add.component';
 
 
 
@@ -14,7 +15,8 @@ import { SafePipe } from './pipes/safe.pipe';
     VideoDetailComponent,
     VideoListComponent,
     VideoCenterComponent,
-    SafePipe
+    SafePipe,
+    VideoAddComponent
   ],
   imports: [
     CommonModule,
