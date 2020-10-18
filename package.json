@@ -3,6 +3,7 @@
   "version": "1.0.2",
   "scripts": {
     "ng": "ng",
+    "postinstall": "cd src/server && npm install",
     "start": "concurrently \"npm run start:server\" \"npm run start:client\" ",
     "start:server": "nodemon --watch src/server src/server/index.js",
     "start:client": "ng serve",
