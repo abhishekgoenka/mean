@@ -3,7 +3,7 @@ A MEAN stack application
 
 [![Build Status](https://dev.azure.com/abhishekgoenkapublic/github-projects/_apis/build/status/mean-main-ci?branchName=main)](https://dev.azure.com/abhishekgoenkapublic/github-projects/_build/latest?definitionId=3&branchName=main)
 
-> https://abhishek1950mean.herokuapp.com/home
+> https://abhishek1950mean.herokuapp.com
 
 # Angular MEAN stack application
 
@@ -36,20 +36,21 @@ You can [watch build the app](https://www.youtube.com/watch?v=vLvNr3Wa5YI&list=P
     npm i
     ```
 
-1. Configure Cosmos DB server settings
+1. Configure MongoDB server settings
 
-    Rename the `example-environment.js` file to `environment.js` in the `server/env/` folder and update it with your Cosmos DB settings. Replace the database name key, and port with your specific configuration.
+    Update `local-environment.js` file in the `server/env/` folder with your MongoDB settings. Replace the database name key, and port with your specific configuration.
 
     ```javascript
-    // server/env/environment.js
-    const cosmosPort = 1234; // replace with your port
-    const dbName = 'your-cosmos-db-name-goes-here';
-    const key = 'your-key-goes-here';
+    const dbName = 'mean-application';
+    const un = 'abhishek';
+    const pwd = 'abhishek123'
+    const port = '44979'
 
     module.exports = {
-      cosmosPort,
-      dbName,
-      key
+        dbName,
+        un,
+        pwd,
+        port
     };
     ```
 
