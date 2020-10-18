@@ -3,11 +3,11 @@ A MEAN stack application
 
 [![Build Status](https://dev.azure.com/abhishekgoenkapublic/github-projects/_apis/build/status/mean-main-ci?branchName=main)](https://dev.azure.com/abhishekgoenkapublic/github-projects/_build/latest?definitionId=3&branchName=main)
 
+> https://abhishek1950mean.herokuapp.com/home
+
 # Angular MEAN stack application
 
-You can [watch me build the app as part of my series here](https://johnpapa.net/angular-cosmosdb-1/)
-
-You can [view all videos together here](/VIDEOS.md)
+You can [watch build the app](https://www.youtube.com/watch?v=vLvNr3Wa5YI&list=PLC3y8-rFHvwj200LLotCYum_9wmGeTJx9&index=1)
 
 [Learn more about developing Node.js apps with Azure's cloud services here](https://www.youtube.com/watch?v=HznzUUMyV1Q&list=PLC3y8-rFHvwj200LLotCYum_9wmGeTJx9)
 
@@ -90,7 +90,7 @@ You can [view all videos together here](/VIDEOS.md)
 > docker run -p 80:80 abhishek1950/mean
 
 ### URL to use
-http://localhost/
+> http://localhost/
 
 ## Problems or Suggestions
 
