@@ -12,7 +12,7 @@ const mongoUri = `mongodb://${env.un}:${env.pwd}@ds044979.mlab.com:${env.port}/$
 
 function connect() {
     mongoose.set('debug', true);
-    return mongoose.connect(mongoUri, {useNewUrlParser: true});
+    return mongoose.connect(mongoUri, {useNewUrlParser: true, useUnifiedTopology: true});
 }
 
 module.exports = {
