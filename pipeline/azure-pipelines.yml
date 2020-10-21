@@ -73,7 +73,6 @@ steps:
     tags: |
       $(tag)
       latest
-      registry.heroku.com/heroku-api-azure/web
       
 # - task: Bash@3
 #   displayName: publish heroku container
