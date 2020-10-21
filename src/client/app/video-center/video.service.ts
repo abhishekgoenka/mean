@@ -17,14 +17,14 @@ export class VideoService {
   }
 
   addVideo(video: Video): Observable<Video> {
-    return this.http.post<Video>(`${api}/video`, video);
+    return this.http.post<Video>(`${api}/videos`, video);
   }
 
   updateVideo(id: string, video: Video): Observable<Video> {
-    return this.http.put<Video>(`${api}/video/${id}`, video);
+    return this.http.put<Video>(`${api}/videos/${id}`, video);
   }
 
   deleteVideo(id: string): Observable<Video> {
-    return this.http.delete<Video>(`${api}/video/${id}`);
+    return this.http.delete<Video>(`${api}/videos/${id}`);
   }
 }
